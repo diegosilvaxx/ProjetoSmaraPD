@@ -15,6 +15,16 @@ para rodar o projeto deve se atentar em alterar as config do banco na classe Sta
 <strong>-Dados padrão para poder acessar o sistema</strong><br>
 Email : admin@gmail.com <br>
 Senha : 1234 <br> </strong> <br> <br>
+
+# Requisitos para rodar o Front-End
+
+-Instalação do Node.js
+
+# Requisitos para rodar o Back-End
+
+-Banco de dados Sql Server <br>
+-Rodar o Migration no Entity Framework Core <br>
+-Alimentar o banco de dados <br>
         
 Qualquer duvida estou a disposição. <br><br>
 
