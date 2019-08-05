@@ -25,7 +25,19 @@ Senha : 1234 <br> </strong> <br> <br>
 -Banco de dados Sql Server <br>
 -Rodar o Migration no Entity Framework Core <br>
 -Alimentar o banco de dados <br>
-        
+
+<strong>Tela de Login</strong><br>
+![alt text](https://github.com/diegosilvaxx/ProjetoSmaraPD/blob/master/SiteSmaraPD/ClienteSmara/src/assets/SmaraPD2.png)
+<br>
+
+<strong>Tela de reservas</strong><br>
+![alt text](https://github.com/diegosilvaxx/ProjetoSmaraPD/blob/master/SiteSmaraPD/ClienteSmara/src/assets/SmaraPD3.png)
+<br> 
+
+<strong>Tela de confirmação</strong><br>
+![alt text](https://github.com/diegosilvaxx/ProjetoSmaraPD/blob/master/SiteSmaraPD/ClienteSmara/src/assets/SmaraPD.png)
+<br> 
+<br>
 Qualquer duvida estou a disposição. <br><br>
 
 Att: Diego Borges  <br>
