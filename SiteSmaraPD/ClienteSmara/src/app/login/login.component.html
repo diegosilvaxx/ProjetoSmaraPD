@@ -1,0 +1,19 @@
+<div style="display:flex;align-items:center;justify-content:center;height:800px">
+  <form class="form-signin">
+    <img class="mb-4" src="../../assets/SMARAPD_Logo_cor.png" alt="" width="192" height="72">
+    <h1 class="h3 mb-3 font-weight-normal">Por favor, inscreva-se</h1>
+    <label for="email"  class="sr-only">Email address</label>
+    <input type="email" [ngModelOptions]="{standalone: true}" [(ngModel)]="usuario.email" id="email" class="form-control" placeholder="Email address" required autofocus>
+    <label for="inputPassword" class="sr-only">Password</label>
+    <input type="password" [ngModelOptions]="{standalone: true}" [(ngModel)]="usuario.senha" id="senha" class="form-control" placeholder="Password" required>
+    <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me"> lembre-me
+      </label>
+    </div>
+    <button class="btn btn-lg btn-primary btn-block" type="submit" (click)="fazerLogin()">Entrar</button>
+    <br><span>{{error}}</span>
+    <p class="mt-5 mb-3 text-muted">&copy; 2018-2019</p>
+  </form>
+</div>
+

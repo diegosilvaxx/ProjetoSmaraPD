@@ -1,0 +1,85 @@
+
+<div style="margin-left:10%;margin-right:10%;margin-top:5%" *ngIf="mostrarMenu">
+  <h1>Reservas de salas</h1>
+
+  <p style="font-size:22px;">Agende uma das salas disponíveis.</p>
+
+  <p *ngIf="!salaReservada"><em>Loading...</em></p>
+  <br /><br />
+  <p style="font-size:20px;">Salas reservadas</p>
+  <table class='table' *ngIf="salaReservada">
+    <thead>
+      <tr>
+        <th style="width:25%;">Sala</th>
+        <th style="width:25%;">Data de locação</th>
+        <th style="width:25%;">Data de entrega</th>
+        <th style="width:25%;">Cliente</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let salaReservada of salaReservada">
+        <td style="width:25%;">{{ salaReservada.sala }}</td>
+        <td style="width:25%;">{{ salaReservada.dataLocacao | date:'shortDate'}}</td>
+        <td style="width:25%;">{{ salaReservada.dataEntrega | date:'shortDate'}}</td>
+        <td style="width:25%;">{{ salaReservada.clientes.nome }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p style="font-size:20px;">Salas Disponíveis</p>
+  <table class='table' *ngIf="salaDisponivel">
+    <thead>
+      <tr>
+        <th style="width:25%;">Sala</th>
+        <th style="width:25%;">Medida</th>
+        <th style="width:25%;">Ambiente</th>
+        <th style="width:25%;">Config</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let salaDisponivel of salaDisponivel">
+        <td>{{ salaDisponivel.sala }}</td>
+        <td>22 m²</td>
+        <td>Natural</td>
+        <td>
+          <ng-template #content let-modal>
+            <div class="modal-header">
+              <h4 class="modal-title" id="modal-basic-title">Reservas de salas</h4>
+              <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form #searchForm="ngForm" (ngSubmit)="findRegister(searchForm.value.name)">
+                <div class="form-group">
+                  <label for="dateOfBirth">Data de entrega</label>
+                  <div class="input-group">
+                    <input id="dateOfBirth" class="form-control" placeholder="2019-01-01" name="dp" ngbDatepicker #dp="ngbDatepicker">
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-secondary calendar" (click)="dp.toggle()" type="button">➕</button>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="modal-footer">
+                  <button type="submit" class="btn btn-outline-dark" (click)="reservarSala(salaDisponivel.sala,salaDisponivel.id,salaDisponivel.clienteId)">Salvar</button>
+                </div>
+              </form>
+            </div>
+          </ng-template>
+
+          <button class="btn btn-lg btn-outline-primary" (click)="open(content)">Reservar</button>
+
+
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+
+

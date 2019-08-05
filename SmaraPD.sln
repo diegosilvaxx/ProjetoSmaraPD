@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29009.5
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmaraPD", "SmaraPD\SmaraPD.csproj", "{345C5CA5-64AC-474E-97B8-2E55AD78F338}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SiteSmaraPD", "SiteSmaraPD\SiteSmaraPD.csproj", "{797A2659-8901-4C60-A2A0-CD9791CFDE24}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{345C5CA5-64AC-474E-97B8-2E55AD78F338}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{345C5CA5-64AC-474E-97B8-2E55AD78F338}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{345C5CA5-64AC-474E-97B8-2E55AD78F338}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{345C5CA5-64AC-474E-97B8-2E55AD78F338}.Release|Any CPU.Build.0 = Release|Any CPU
+		{797A2659-8901-4C60-A2A0-CD9791CFDE24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{797A2659-8901-4C60-A2A0-CD9791CFDE24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{797A2659-8901-4C60-A2A0-CD9791CFDE24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{797A2659-8901-4C60-A2A0-CD9791CFDE24}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2DC4ED17-090F-4508-87F0-C7641E9B4682}
+	EndGlobalSection
+EndGlobal
